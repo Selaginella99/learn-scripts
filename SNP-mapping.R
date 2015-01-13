@@ -114,3 +114,11 @@ write(candi_snps1, file = 'candi-snps-1.csv')
 write(candi_snps2, file = 'candi-snps-2.csv')
 write(candi_snps3, file = 'candi-snps-3.csv')
 write(candi_snps, file = 'candi-snps.csv')
+
+## write candidate snps, with gene names after
+
+names(genemap) = mapping$SNP_ID
+for (i in 1L:length(candi_snps1)) write(paste(candi_snps1[i], paste(genemap[[candi_snps1[i]]], collapse = ','), sep = ','), file = 'candi-spns-with-gene-symbol-1', append = TRUE)
+for (i in 1L:length(candi_snps2)) write(paste(candi_snps2[i], paste(genemap[[candi_snps2[i]]], collapse = ','), sep = ','), file = 'candi-spns-with-gene-symbol-2', append = TRUE)
+for (i in 1L:length(candi_snps3)) write(paste(candi_snps3[i], paste(genemap[[candi_snps3[i]]], collapse = ','), sep = ','), file = 'candi-spns-with-gene-symbol-3', append = TRUE)
+for (i in 1L:length(candi_snps)) write(paste(candi_snps[i], paste(genemap[[candi_snps[i]]], collapse = ','), sep = ','), file = 'candi-spns-with-gene-symbol', append = TRUE)
