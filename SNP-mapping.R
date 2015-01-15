@@ -1,9 +1,13 @@
 setwd('~/Desktop/')
 
+library(Hmisc)
+
 ## load gene lists to be mapped for their snps
 sheet1 = read.csv('sheet1-aging.csv', as.is = TRUE)
 sheet2 = read.csv('sheet2-longevity.csv', as.is = TRUE)
 sheet3 = read.csv('sheet3-longevity.csv', as.is = TRUE)
+
+# describe(mydata) to do some exploratory analysis
 
 ## load snp-gene mapping table
 mapping = read.csv('IBC_chip_final_49K SNP_list_BroadInst.csv', as.is = TRUE)
