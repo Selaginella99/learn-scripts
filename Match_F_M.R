@@ -1,10 +1,11 @@
-## Find the overlapp of SNAs between males and females in EMMAX (continuous or binary)
+## Find the overlap of SNAs between males and females in EMMAX (continuous or binary)
 ## Date: Feb 22, 2015
 
 snpf = read.csv('Markers LS F.csv', header = TRUE, as.is = TRUE)
 snpm = read.csv('Markers LS M.csv', header = TRUE, as.is = TRUE)
 snpfb = read.csv('Markers LS F_binary.csv', header = TRUE, as.is = TRUE)
 snpmb = read.csv('Markers LS M_binary.csv', header = TRUE, as.is = TRUE)
+###*### SNPs selected from lifespan GWAS in EMMAX model
 
 # set 1: F
 # set 2: M
