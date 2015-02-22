@@ -5,7 +5,8 @@ snpf = read.csv('Markers LS F.csv', header = TRUE, as.is = TRUE)
 snpm = read.csv('Markers LS M.csv', header = TRUE, as.is = TRUE)
 snpfb = read.csv('Markers LS F_binary.csv', header = TRUE, as.is = TRUE)
 snpmb = read.csv('Markers LS M_binary.csv', header = TRUE, as.is = TRUE)
-###*### SNPs selected from lifespan GWAS in EMMAX model
+###### SNPs selected from lifespan GWAS in EMMAX model
+###### Outcome lifespan was coded as a continuous or binary variable
 
 # set 1: F
 # set 2: M
