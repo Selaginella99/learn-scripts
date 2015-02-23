@@ -35,6 +35,20 @@ n134 = length(intersect(intersect(set1, set3), set4))
 n234 = length(intersect(intersect(set2, set3), set4))
 n1234 = length(intersect(intersect(intersect(set1, set2), set3), set4))
 
+nn12 = intersect(set1, set2)  # get intersect set of set 1 and set 2
+nn13 = intersect(set1, set3)  # get intersect set of set 1 and set 3
+nn14 = intersect(set1, set4)  # get intersect set of set 1 and set 4
+nn23 = intersect(set2, set3)  # get intersect set of set 2 and set 3
+nn24 = intersect(set2, set4)  # get intersect set of set 2 and set 4
+nn34 = intersect(set3, set4)  # get intersect set of set 3 and set 4
+nn123 = intersect(intersect(set1, set2), set3)  # get intersect set of set 1, 2 and 3
+nn124 = intersect(intersect(set1, set2), set4)  # get intersect set of set 1, 2 and 4
+nn134 = intersect(intersect(set1, set3), set4)  # get intersect set of set 1, 3 and 4
+nn234 = intersect(intersect(set2, set3), set4)  # get intersect set of set 2, 3 and 4
+nn1234 = intersect(intersect(intersect(set1, set2), set3), set4)  # get intersect set of set 1, 2, 3 and 4
+
+
+## Plot the intersect sets of set1, set2, set3 and set 4 using Venn plot
 library(VennDiagram)
 
 venn.plot <- draw.quad.venn(
