@@ -61,6 +61,8 @@ venn.plot <- draw.quad.venn(
   cat.col = c("orange", "red", "green", "blue")  # specify the color of the set names
 )
 
+## draw.venn.plot: http://127.0.0.1:13913/library/VennDiagram/html/draw.quad.venn.html
+
 png("quad_venn.png", width = 800, height = 600)  # open a png device, output a 800 x 600 png file
 grid.draw(venn.plot)  # VennDiagram uses the grid device to plot, so here is a bit different with base graphics. This syntax is directly from the example of the function's help.
 dev.off()  # close the device (and the png file will be written to disk)
