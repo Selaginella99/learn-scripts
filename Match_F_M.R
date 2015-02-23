@@ -51,7 +51,7 @@ library(VennDiagram)  # library for drawing venn diagrams in R
 
 # draw venn plot (see the package help for more details)
 # we have four sets, so use draw.quad.venn() here
-venn.plot <- draw.quad.venn(
+venn.plot_lf <- draw.quad.venn(
   area1 = area1,
   area2 = area2,
   area3 = area3,
@@ -67,16 +67,16 @@ venn.plot <- draw.quad.venn(
   n134 = n134,
   n234 = n234,
   n1234 = n1234,
-  category = c("Female", "Male", "Female Binary", "Male Binary"),  # specify the set names
+  category = c("Female Quant", "Male Quant", "Female Binary", "Male Binary"),  # specify the set names
   fill = c("orange", "red", "green", "blue"),  # specify set colors
   lty = "dashed",  # specify dash pattern of the circles' circumferences
-  cex = 2,  # specify the size of the set labels
-  cat.cex = 2,  # specify the size of the set names
+  cex = 1.8,  # specify the size of the set labels
+  cat.cex = 1.8,  # specify the size of the set names
   cat.col = c("orange", "red", "green", "blue")  # specify the color of the set names
 )
 
 ## draw.venn.plot: http://127.0.0.1:13913/library/VennDiagram/html/draw.quad.venn.html
 
-png("quad_venn.png", width = 800, height = 600)  # open a png device, output a 800 x 600 png file
-grid.draw(venn.plot)  # VennDiagram uses the grid device to plot, so here is a bit different with base graphics. This syntax is directly from the example of the function's help.
+png("quad_venn_ls.png", width = 800, height = 600)  # open a png device, output a 800 x 600 png file
+grid.draw(venn.plot_lf)  # VennDiagram uses the grid device to plot, so here is a bit different with base graphics. This syntax is directly from the example of the function's help.
 dev.off()  # close the device (and the png file will be written to disk)
