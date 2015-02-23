@@ -42,6 +42,8 @@ n134_ls = intersect(intersect(set1, set3), set4)  # get intersect set of set 1, 
 n234_ls = intersect(intersect(set2, set3), set4)  # get intersect set of set 2, 3 and 4
 n1234_ls = intersect(intersect(intersect(set1, set2), set3), set4)  # get intersect set of set 1, 2, 3 and 4
 
+
+## Plot the intersect sets of set1, set2, set3 and set 4 using Venn plot
 library(VennDiagram)  # library for drawing venn diagrams in R
 # another usable R package is: venneuler
 # For set visualization techniques, see the Nat. Met. paper:
