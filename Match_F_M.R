@@ -30,6 +30,18 @@ n134 = length(intersect(intersect(set1, set3), set4))  # get intersect set size 
 n234 = length(intersect(intersect(set2, set3), set4))  # get intersect set size of set 2, 3 and 4
 n1234 = length(intersect(intersect(intersect(set1, set2), set3), set4))  # get intersect set size of set 1, 2, 3 and 4
 
+n12_ls = intersect(set1, set2)  # get intersect set of set 1 and set 2
+n13_ls = intersect(set1, set3)  # get intersect set of set 1 and set 3
+n14_ls = intersect(set1, set4)  # get intersect set of set 1 and set 4
+n23_ls = intersect(set2, set3)  # get intersect set of set 2 and set 3
+n24_ls = intersect(set2, set4)  # get intersect set of set 2 and set 4
+n34_ls = intersect(set3, set4)  # get intersect set of set 3 and set 4
+n123_ls = intersect(intersect(set1, set2), set3)  # get intersect set of set 1, 2 and 3
+n124_ls = intersect(intersect(set1, set2), set4)  # get intersect set of set 1, 2 and 4
+n134_ls = intersect(intersect(set1, set3), set4)  # get intersect set of set 1, 3 and 4
+n234_ls = intersect(intersect(set2, set3), set4)  # get intersect set of set 2, 3 and 4
+n1234_ls = intersect(intersect(intersect(set1, set2), set3), set4)  # get intersect set of set 1, 2, 3 and 4
+
 library(VennDiagram)  # library for drawing venn diagrams in R
 # another usable R package is: venneuler
 # For set visualization techniques, see the Nat. Met. paper:
