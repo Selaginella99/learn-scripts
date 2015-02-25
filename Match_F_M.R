@@ -67,11 +67,11 @@ venn.plot_lf <- draw.quad.venn(
   n134 = n134,
   n234 = n234,
   n1234 = n1234,
-  category = c("Female Quant", "Male Quant", "Female Binary", "Male Binary"),  # specify the set names
+  category = c("Female LS Quant", "Male LS Quant", "Female LS Binary", "Male LS Binary"),  # specify the set names
   fill = c("orange", "red", "green", "blue"),  # specify set colors
   lty = "dashed",  # specify dash pattern of the circles' circumferences
-  cex = 1.8,  # specify the size of the set labels
-  cat.cex = 1.8,  # specify the size of the set names
+  cex = 1.7,  # specify the size of the set labels
+  cat.cex = 1.7,  # specify the size of the set names
   cat.col = c("orange", "red", "green", "blue")  # specify the color of the set names
 )
 
