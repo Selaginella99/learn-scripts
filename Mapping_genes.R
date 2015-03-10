@@ -17,13 +17,20 @@ intersect_emmax_gene_1 = lr_e_f
 for (i in 5) intersect_emmax_gene_1[, i] = NA
 names(intersect_emmax_gene_1)[5] = c('IBC_gene')
 
+### intersect_emmax_gene_1 = lr_e_f
+### intersect_emmax_gene_1[, 5] = NA
+### names(intersect_emmax_gene_1)[5] = c('IBC_gene')
+
 intersect_emmax_gene_2 = lr_e_m
 for (i in 5) intersect_emmax_gene_2[, i] = NA
 names(intersect_emmax_gene_2)[5] = c('IBC_gene')
 
+### intersect_emmax_gene_2 = lr_e_m
+### intersect_emmax_gene_2[, 5] = NA
+### names(intersect_emmax_gene_2)[5] = c('IBC_gene')
+
 
 ## looking for the corresponding gene for each SNP
-
 for (i in 1L:nrow(intersect_emmax_gene_1)) {
   print(i)
   for (j in 1L:nrow(mapping.ibc)) {
