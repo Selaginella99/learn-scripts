@@ -3,14 +3,13 @@ library(Hmisc)
 
 setwd("Z:/Project/Framingham/Data/Phenotype/FHS49K_lifespan&weight")
 
-## load snps/gene lists to be mapped for their genes
+## load snps/gene lists to be mapped for their SNPs/genes in the annotation of IBC49K chip
 
 lr_e_f = read.csv("LR_emmax_F.csv",as.is=TRUE)
 lr_e_m = read.csv("LR_emmax_M.csv",as.is=TRUE)
 
 ## load snp-gene mapping table
 mapping.ibc = read.csv('IBC_chip_final_49K SNP_list_BroadInst.csv', as.is = TRUE)
-
 # describe(mydata) like describe(mapping) to explore the datasheet
 
 ## set up the new snp-gene mapping table
