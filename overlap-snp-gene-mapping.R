@@ -20,5 +20,5 @@ rs_intersect = intersect(marker_rs_f, marker_rs_m)  # get intersect set of M & F
 ls_final_table = ibctable[ls_intersect, c('SNP_ID', 'Chromosome', 'RefSeq_hg18_Gene')]
 rs_final_table = ibctable[rs_intersect, c('SNP_ID', 'Chromosome', 'RefSeq_hg18_Gene')]
 
-write.table(ls_final_table, file = 'intersect_table_ls.tsv', row.names = FALSE, quote = FALSE, sep = '\t')
-write.table(rs_final_table, file = 'intersect_table_rs.tsv', row.names = FALSE, quote = FALSE, sep = '\t')
+write.csv(ls_final_table, file = 'intersect_table_ls.csv', row.names = FALSE, quote = FALSE)
+write.csv(rs_final_table, file = 'intersect_table_rs.csv', row.names = FALSE, quote = FALSE)
