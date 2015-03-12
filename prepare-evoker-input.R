@@ -12,7 +12,7 @@ evoker_df$SNP = snps
 
 for (i in 1L:length(indindex)) {
   cat('Merging', i, 'in', length(indindex), '\n')
-  tmp = read.table(paste0(genoprefix, indindex[i]), 
+  tmp = read.table(paste0(paste0(genoprefix, indindex[i]), '.gz'),
                    sep = ',', header = FALSE, 
                    colClasses = c(rep('NULL', 8L), 
                                   rep('numeric', 2)))  # load faster
