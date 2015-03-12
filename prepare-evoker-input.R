@@ -4,7 +4,7 @@ famfile = list.files()[grep('.fam', list.files())]
 famtable = read.table(famfile, sep = ' ', header = FALSE, as.is = TRUE)
 indindex = as.character(famtable$V2)
 
-snps = read.table(paste0(genoprefix, indindex[1L]), sep = ',', header = FALSE, as.is = TRUE)[, 1L]
+snps = read.table(paste0(paste0(genoprefix, indindex[1L]), '.gz'), sep = ',', header = FALSE, as.is = TRUE)[, 1L]
 
 evoker_df = as.data.frame(matrix(NA, nrow = length(snps), ncol = (2L * length(indindex)) + 1L))
 names(evoker_df) = c('SNP', rep(indindex, each = 2L))
